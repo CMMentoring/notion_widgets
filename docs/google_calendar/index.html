@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <iframe id="calendarFrame" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <script>
+      const today = new Date();
+      const year = today.getFullYear();
+      const month = String(today.getMonth() + 1).padStart(2, '0');
+      const date = String(today.getDate()).padStart(2, '0');
+      const formattedDate = `${year}${month}${date}`;
+      const calendarURL = `https://calendar.google.com/calendar/embed?src=mantegna%40uw.edu&ctz=America%2FLos_Angeles&mode=AGENDA&dates=${formattedDate}/${formattedDate}`;
+      document.getElementById("calendarFrame").src = calendarURL;
+    </script>
+  </body>
+</html>
