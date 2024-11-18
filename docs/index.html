@@ -1,44 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-    .widget {
-      font-size: 20px;
-      color: #333;
-    }
-  </style>
+    <meta http-equiv="refresh" content="0; url=date_day/index.html">
+    <title>Redirecting...</title>
 </head>
 <body>
-  <div class="widget">
-    <div id="day"></div>
-    <div id="date"></div>
-    <div id="julianDate"></div>
-  </div>
-
-  <script>
-    // Get today's date
-    const today = new Date();
-    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-    // Set the day of the week
-    document.getElementById("day").innerText = dayNames[today.getDay()];
-
-    // Set the date in "Month numerical date" format
-    document.getElementById("date").innerText = `${monthNames[today.getMonth()]} ${today.getDate()}`;
-
-    // Calculate the Julian date
-    const start = new Date(today.getFullYear(), 0, 0);
-    const diff = today - start + (start.getTimezoneOffset() - today.getTimezoneOffset()) * 60 * 1000;
-    const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24));
-    document.getElementById("julianDate").innerText = `Julian Date: ${dayOfYear}`;
-  </script>
+    <p>If you are not redirected automatically, <a href="date_day/index.html">click here</a>.</p>
 </body>
 </html>
